@@ -1,0 +1,92 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+/* Typography */
+
+h1,
+#subtitle {
+  padding: 0.4em;
+  margin: 0.2em;
+  border-radius: 0.5em;
+  color: white;
+}
+
+h1 {
+  background-color: #1d3557;
+  font-size: 4rem;
+}
+
+#subtitle {
+  background-color: #457b9d;
+  font-size: 2rem;
+  letter-spacing: 1px;
+}
+
+/* Layout */
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background-image: url("images/torshov.jpg");
+  background-size: cover;
+}
+
+.item {
+  width: 250px;
+  margin: 2em;
+  color: #1d3557;
+  font-size: 1.5rem;
+}
+
+.item-img {
+  width: 150px;
+  border-radius: 50%;
+}
+
+.item > * {
+  margin: 0.5em;
+}
+
+#card {
+  width: 450px;
+  display: flex;
+  margin: 0 auto 10em auto;
+  background-color: #a8dadc;
+  color: #1d3557;
+  border-radius: 2em;
+  border-bottom: 4px solid #1d3557;
+}
+
+#card-img {
+    width: 200px;
+    margin: 1em;
+    border-radius: 2em;
+}
+
+#information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1em;
+}
+
+#information > * {
+  margin: 0.5em;
+}
+
+@media (min-width: 600px) {
+  #services {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
